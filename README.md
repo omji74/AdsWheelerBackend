@@ -43,7 +43,7 @@ Create or edit your `.env` file in the root directory:
 
 ```env
 # Server Configuration
-PORT=5000
+PORT=5001
 NODE_ENV=development
 CORS_ORIGIN=*
 
@@ -138,7 +138,7 @@ The database consists of 6 tables:
 
 ### Register User (Driver)
 ```bash
-curl -X POST http://localhost:5000/api/users \
+curl -X POST http://localhost:5001/api/users \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Rajesh Kumar",
@@ -158,7 +158,7 @@ curl -X POST http://localhost:5000/api/users \
 
 ### Create Advertisement (Publisher)
 ```bash
-curl -X POST http://localhost:5000/api/ads \
+curl -X POST http://localhost:5001/api/ads \
   -H "Content-Type: application/json" \
   -d '{
     "publisher_id": 1,
